@@ -1,0 +1,14 @@
+package Multithreading.MonitorLock;
+
+public class MonitorThread1Runnable implements Runnable{
+
+    MonitorLockExample obj;
+
+    MonitorThread1Runnable(MonitorLockExample obj){
+        this.obj = obj;
+    }
+    @Override
+    public void run() {
+        obj.method1();
+    }
+}
